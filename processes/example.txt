@@ -1,0 +1,15 @@
+semyonzhuravlev@MacBook-Air processes % clang -std=c89 child.c -o child.out
+semyonzhuravlev@MacBook-Air processes % clang -std=c89 main.c src/list.c -o main.out
+semyonzhuravlev@MacBook-Air processes % ./main.out
+Введите имя файла: MyFile.txt
+Введите массив чисел: 1  
+2
+4
+8
+16
+32
+64
+128
+256
+semyonzhuravlev@MacBook-Air processes % cat < MyFile.txt
+511
