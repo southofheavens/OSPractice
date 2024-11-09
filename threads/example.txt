@@ -1,0 +1,27 @@
+semyonzhuravlev@MacBook-Air threads % clang -std=c89 -pthread main.c -o main.out 
+semyonzhuravlev@MacBook-Air threads % ./main.out
+Необходимо передать количество потоков в качестве ключа запуска программы!
+semyonzhuravlev@MacBook-Air threads % ./main.out 5
+With threads
+min: -1073741820, max: 1073741820
+Lead time: 0.069 seconds
+
+Without threads
+min: -1073741820, max: 1073741820
+Lead time: 0.218 seconds
+semyonzhuravlev@MacBook-Air threads % ./main.out 2
+With threads
+min: -1073741818, max: 1073741795
+Lead time: 0.117 seconds
+
+Without threads
+min: -1073741818, max: 1073741795
+Lead time: 0.216 seconds
+semyonzhuravlev@MacBook-Air threads % ./main.out 10
+With threads
+min: -1073741793, max: 1073741822
+Lead time: 0.053 seconds
+
+Without threads
+min: -1073741793, max: 1073741822
+Lead time: 0.219 seconds
